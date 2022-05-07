@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login em JavaScript para Atividade Interdisciplinar</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 80%;
+            height: 100%;
+            background-color: rgb(201, 248, 240);
+        }
+
+        form{
+            width: 250px;
+            margin: 180px; auto;
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: 8px auto;
+            width: 300px;
+            height: 40px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <form>
+
+        <h3>Login</h3>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+
+
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+
+            if(login == "" && senha == ""){
+                alert('Os campos usuário e senha são obrigatórios');
+                
+            }else{
+                alert('Login realizado com sucesso');
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
